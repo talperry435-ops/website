@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <title>bagrut puzzle app</title>
+</head>
+<body>
+        <div id="shared-header"></div>
+        <main>
+                <h3>Welcome to the games page!</h3>
+                <p>this page contains the 3 games that are the core of this website: find the differences, a maze, and find the object.</p>
+                <br>
+                <h3>Find the differences</h3>
+                <img src="image/ftdbase.png" alt="base picture" id="baseftd" class="game-image">
+                <div class="button-row">
+                    <button onclick="getElementById('baseftd').src='image/ftd1.png'" class="game-button">difference 1</button>
+                    <button onclick="getElementById('baseftd').src='image/ftd2.png'" class="game-button">difference 2</button>
+                    <button onclick="getElementById('baseftd').src='image/ftd3.png'" class="game-button">difference 3</button>
+                    <button onclick="getElementById('baseftd').src='image/ftd4.png'" class="game-button">difference 4</button>
+                    <button onclick="getElementById('baseftd').src='image/ftd5.png'" class="game-button">difference 5</button>
+                    <button onclick="getElementById('baseftd').src='image/ftdbase.png'" class="game-button">back to base</button>
+                </div>
+                <h3>Maze</h3>
+                <img src="image/maze.png" alt="maze picture" id="maze-image" class="game-image">
+                <button onclick="ToggleMaze()" id="maze-button" class="game-button">reveal solution</button>
+                <h3>Find the object</h3>
+                <p>object to find: poop</p>
+                <img src="image/findtheobject.png" alt="find the object picture" class="game-image">
+                <button onclick="ToggleFindObject()" id="fto-button" class="game-button">reveal answer</button>
+                <p id="blahblah">bonus points: how many people are wearing a red shirt?</p>
+                <button onclick="returtwelve()" id="how many" class="game-button">show answer</button>
+                <p id="show12" class="para"></p>
+            </main>
+        <footer>
+            <p>Built with HTML, CSS, JavaScript, and C# .NET Minimal API.</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

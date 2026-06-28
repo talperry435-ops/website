@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <title>bagrut puzzle app</title>
+</head>
+<body>
+   <div id="shared-header"></div>
+    <main> 
+        <h3>About This App</h3>
+        <p>this website is my personal project for the bagrut assignment, and it contains all the necessary components of a simple website. <br> i picked this idea because of a different app called "inkwell games" that i am very fond of and also has 3 distinct puzzle games, just of a higher difficulty level. </p>
+        <h3>How it is built</h3>
+        <table>
+                <thead>
+                    <tr>
+                        <th>Part</th>
+                        <th>What it does</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML pages</td>
+                        <td>Provide the content for Home, About and games.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS file</td>
+                        <td>Keeps the layout clean and consistent without a complex design.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript file</td>
+                        <td>Handles the technical side of the website, mainly the games' interactivity, but also manages the server-side logic.</td>
+                    </tr>
+                    <tr>
+                        <td>C# file</td>
+                        <td>Serves the pages and returns some data for the browser to display.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>The JavaScript</h3>
+            <p>the javascript in my website handles the interactive elements of the puzzle games, meaning the buttons the user can press and the interactive features in find the differences and find the object. <br> more specifically, if you press certain parts of the pictures, the javascript is responsible for switching the image to a different one, with the corresponding part circled red.</p>
+            <h3>The server-side implementation</h3>
+            <p>the c# backend is the one receiving the username inserted at the home page and is responsible for sending the number of differences back to the javascript when a button is pressed.</p>
+        </main>
+        <footer>
+            <p>Built with HTML, CSS, JavaScript, and C# .NET Minimal API.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
